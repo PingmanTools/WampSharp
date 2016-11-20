@@ -1,4 +1,4 @@
-﻿<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" />
   <PropertyGroup>
     <TargetFramework>netstandard1.3</TargetFramework>
@@ -6,7 +6,6 @@
     <AssemblyTitle>WampSharp Newtonsoft.Msgpack binding</AssemblyTitle>
     <VersionPrefix>1.2.3</VersionPrefix>
     <TargetFramework>netstandard1.3</TargetFramework>
-    <AssemblyName>WampSharp.NewtonsoftMsgpack</AssemblyName>
     <PackageTags>websockets;wampws;rpc;pubsub;newtonsoft;msgpack;wampv2</PackageTags>
     <PackageProjectUrl>https://github.com/Code-Sharp/WampSharp/</PackageProjectUrl>
     <GenerateAssemblyTitleAttribute>false</GenerateAssemblyTitleAttribute>
@@ -24,7 +23,7 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="NETStandard.Library">
-      <Version>1.6</Version>
+      <Version>1.6.1</Version>
     </PackageReference>
     <PackageReference Include="Microsoft.NET.Sdk">
       <Version>1.0.0-alpha-20161104-2</Version>

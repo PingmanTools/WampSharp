@@ -1,0 +1,35 @@
+﻿<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" />
+  <PropertyGroup Label="Configuration">
+    <DefineConstants>DEBUG;TRACE;NETCORE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetFramework>netstandard1.3</TargetFramework>
+    <Description>WampSharp above Newtonsoft.Json, Newtonsoft.Msgpack and WebSocket4Net</Description>
+    <AssemblyTitle>"WampSharp default client binding</AssemblyTitle>
+    <VersionPrefix>1.2.3</VersionPrefix>
+    <PackageTags>websockets;wampws;rpc;pubsub;newtonsoft;json;msgpack;wampv2</PackageTags>
+    <PackageProjectUrl>https://github.com/Code-Sharp/WampSharp/</PackageProjectUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="**\*.cs" />
+    <EmbeddedResource Include="**\*.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="NETStandard.Library">
+      <Version>1.6</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.NET.Sdk">
+      <Version>1.0.0-alpha-20161104-2</Version>
+      <PrivateAssets>All</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Default\WampSharp.NewtonsoftJson\WampSharp.NewtonsoftJson.csproj" />
+    <ProjectReference Include="..\Default\WampSharp.NewtonsoftMsgpack\WampSharp.NewtonsoftMsgpack.csproj" />
+    <ProjectReference Include="..\Default\WampSharp.WebSocket4Net\WampSharp.WebSocket4Net.csproj" />
+    <ProjectReference Include="..\Extensions\WampSharp.WebSockets\WampSharp.WebSockets.csproj" />
+    <ProjectReference Include="..\WampSharp\WampSharp.csproj" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
